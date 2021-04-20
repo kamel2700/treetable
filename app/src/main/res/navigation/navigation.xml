@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/projects_fragment">
+
+    <fragment
+        android:id="@+id/projects_fragment"
+        android:name="the.treetable.projects.ProjectsFragment"
+        android:label="@string/projects">
+        <action
+            android:id="@+id/action_projects_to_node"
+            app:destination="@id/node_fragment"
+            />
+            <!-- app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left" -->
+        <action
+            android:id="@+id/action_projects_to_account"
+            app:destination="@id/account_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/node_fragment"
+        android:name="the.treetable.node.NodeFragment"
+        android:label="@string/node">
+        <argument
+            android:name="node"
+            app:argType="long" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="project_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_node_to_node"
+            app:destination="@id/node_fragment" />
+        <action
+            android:id="@+id/action_projects_to_account"
+            app:destination="@id/account_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/account_fragment"
+        android:name="the.treetable.account.AccountFragment"
+        android:label="@string/account">
+    </fragment>
+</navigation>

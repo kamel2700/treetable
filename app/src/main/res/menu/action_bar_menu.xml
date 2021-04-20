@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom"/>
+
+    <!--<item
+        android:id="@+id/action_account"
+        android:icon="@drawable/account"
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom"/>-->
+    <item
+        android:id="@+id/settings"
+        android:icon="@android:drawable/ic_menu_set_as"
+        android:title="@string/user_details" />
+    <!--<item
+        android:id="@+id/switch_user"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Switch User" />-->
+    <item
+        android:id="@+id/sign_out"
+        android:icon="@android:drawable/ic_menu_set_as"
+        android:title="@string/sign_out" />
+</menu>
