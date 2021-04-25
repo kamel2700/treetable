@@ -1,4 +1,4 @@
-# treetable
+# Tree Table
 ``A user can create and browse their “projects” - structures
 of nice things, say, in your house or at your workplace.``
 
